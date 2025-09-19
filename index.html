@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>História do Vinho na Itália</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <header class="p-4">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <img src="img/logo.png" alt="Logo Vino Italiano" class="logo">
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#historia">História</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+
+      <!-- Menu acessibilidade -->
+      <div id="acessibilidade" class="menu-acessibilidade">
+        <button id="botao-acessibilidade" class="btn btn-success rotacao-botao fw-bold">Acessibilidade</button>
+        <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+          <button id="aumentar-fonte" class="btn btn-success fw-bold">A +</button>
+          <button id="diminuir-fonte" class="btn btn-success fw-bold">A -</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+
+    <!-- Início -->
+    <section id="inicio" class="inicio-fundo d-flex flex-column justify-content-center align-items-start text-white">
+      <h1 class="display-4 fw-bold">Vino Italiano</h1>
+      <p class="lead">A tradição do vinho na Itália através dos séculos.</p>
+      <a href="#historia" class="btn btn-inicio fw-semibold">Quero conhecer</a>
+    </section>
+
+    <!-- História -->
+    <section id="historia" class="my-5">
+      <h2>História do Vinho na Itália</h2>
+      <p>
+        A Itália é um dos berços mais importantes da viticultura mundial. Desde a época do Império Romano, o vinho já era parte essencial da cultura,
+        difundido por toda a Europa com técnicas de cultivo e armazenamento.
+      </p>
+      <p>
+        Atualmente, o país é o maior produtor global de vinho, com regiões famosas como Toscana, Piemonte e Vêneto. Cada vinho carrega não apenas sabor,
+        mas também história, tradição e identidade cultural.
+      </p>
+      <img src="img/vinho-historia.jpg" alt="História do vinho" class="img-fluid rounded-4 mt-3">
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="my-5">
+      <h2 class="text-center">Galeria</h2>
+      <div class="row mt-3">
+        <div class="col-md-4"><img src="img/uva.jpg" class="img-fluid rounded-4" alt="Uvas italianas"></div>
+        <div class="col-md-4"><img src="img/vinhedo.jpg" class="img-fluid rounded-4" alt="Vinhedo na Toscana"></div>
+        <div class="col-md-4"><img src="img/garrafas.jpg" class="img-fluid rounded-4" alt="Garrafas de vinho"></div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="my-5">
+      <h2>Contato</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" id="nome" class="form-control" placeholder="Seu nome">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-control" placeholder="Seu email">
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea id="mensagem" class="form-control" rows="3" placeholder="Escreva sua mensagem"></textarea>
+        </div>
+        <button type="submit" class="btn btn-vermelho">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="text-center p-3 bg-vermelho text-white">
+    <p>Projeto acadêmico - História do Vinho na Itália</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
